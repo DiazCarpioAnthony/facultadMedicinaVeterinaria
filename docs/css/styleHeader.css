@@ -1,6 +1,9 @@
 /*--------------------------HEADER----------------*/
 .top-bar {
   background: #30393a;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 
 .top-bar ul {
@@ -68,6 +71,10 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  margin-top: 38px;
+  z-index: 2;
 }
 
 .navigation-bar .right {
@@ -82,6 +89,7 @@
 }
 
 .navigation-bar .right .right-up-list {
+  background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,6 +272,7 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+  background: #fff;
 }
 
 .navigation-bar .left .left-up-list a {
@@ -375,6 +384,11 @@
   .navigation-bar {
     display: none;
   }
+}
+
+.menu-responsive {
+  position: fixed;
+  width: 100%;
 }
 
 .menu-responsive #check {

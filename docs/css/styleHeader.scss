@@ -1,6 +1,10 @@
+$heightTopBar: 38.8px;
 /*--------------------------HEADER----------------*/
 .top-bar {
   background: #30393a;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
   ul {
     display: flex;
     justify-content: center;
@@ -51,11 +55,16 @@
 .navigation-bar {
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  margin-top: 38px;
+  z-index: 2;
   .right {
     display: flex;
     flex-direction: column;
     width: 42%;
     .right-up-list {
+      background: #fff;
       display: flex;
       justify-content: flex-end;
       a {
@@ -202,6 +211,7 @@
     .left-up-list {
       display: flex;
       justify-content: end;
+      background: #fff;
       a {
         display: block;
         text-decoration: none;
@@ -305,6 +315,8 @@
   }
 }
 .menu-responsive {
+  position: fixed;
+  width: 100%;
   #check {
     display: none;
     &:checked ~ .menu-responsive-header label .icon .active {
@@ -431,3 +443,4 @@
     display: none;
   }
 }
+
