@@ -5,5 +5,19 @@
 
 main {
   padding-top: 200px;
+  width: 80%;
+  margin: auto;
+  font-size: 20px;
+}
+
+main .tree::before {
+  content: " ";
+  float: left;
+  background-image: url("../img/tree.png");
+  background-size: 100% 100%;
+  width: 502px;
+  height: 176px;
+  margin: 12px 25px 0 -3px;
+  shape-outside: content-box polygon(-0.2% -1.8%, 91.6% 1%, 110.2% 0.6%, 101.8% 16%, 98.1% 24.3%, 76.9% 34.5%, 0 70.8%);
 }
 /*# sourceMappingURL=styleIndex.css.map */
