@@ -3,14 +3,14 @@
   margin: 0;
 }
 
-main {
+main .container {
   padding-top: 200px;
   width: 80%;
   margin: auto;
   font-size: 20px;
 }
 
-main .tree::before {
+main .container .tree::before {
   /*Cortesia de https://olivierforget.net/css-shape-outside/ */
   content: " ";
   float: left;

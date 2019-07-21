@@ -393,6 +393,7 @@
 
 .menu-responsive #check {
   display: none;
+  /* main background: rgba(65, 58, 58, 0.4);*/
 }
 
 .menu-responsive #check:checked ~ .menu-responsive-header label .icon .active {
@@ -427,6 +428,7 @@
   height: 58px;
   margin-top: 5px;
   margin-left: 10px;
+  z-index: 2;
 }
 
 .menu-responsive .menu-responsive-header label {
@@ -512,6 +514,7 @@
   overflow: hidden;
   -webkit-transition: all 250ms;
   transition: all 250ms;
+  overflow-y: scroll;
 }
 
 .menu-responsive nav ul .first a {

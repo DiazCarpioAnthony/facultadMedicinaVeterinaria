@@ -332,6 +332,8 @@ $heightTopBar: 38.8px;
     &:checked ~ nav {
       width: 95%;
     }
+      /* main background: rgba(65, 58, 58, 0.4);*/
+    
   }
 
   .menu-responsive-header {
@@ -344,6 +346,7 @@ $heightTopBar: 38.8px;
       height: 58px;
       margin-top: 5px;
       margin-left: 10px;
+      z-index: 2;
     }
     label {
       display: flex;
@@ -405,6 +408,7 @@ $heightTopBar: 38.8px;
     overflow: hidden;
 
     transition: all 250ms;
+    overflow-y: scroll;
     ul {
       .first {
         a {
@@ -484,3 +488,4 @@ $heightTopBar: 38.8px;
     display: none;
   }
 }
+
