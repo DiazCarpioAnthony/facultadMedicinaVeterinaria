@@ -397,10 +397,14 @@
 
 .menu-responsive #check:checked ~ .menu-responsive-header label .icon .active {
   visibility: hidden;
+  position: relative;
 }
 
 .menu-responsive #check:checked ~ .menu-responsive-header label .icon .noactive {
   visibility: visible;
+  position: absolute;
+  top: 3px;
+  left: -5px;
 }
 
 .menu-responsive #check:checked ~ nav {
@@ -437,9 +441,38 @@
   font-family: "Merriweather Sans Regular", Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
-  padding: 14px 30px;
+  padding: 14px 10px;
   border-left: 0.5px solid #fff;
   border-right: 0.5px solid #fff;
+  -webkit-transition: all 150ms;
+  transition: all 150ms;
+}
+
+.menu-responsive .menu-responsive-header label span {
+  display: none;
+  margin-right: 3px;
+}
+
+@-webkit-keyframes animacion {
+  from {
+    width: 0px;
+    color: #222222;
+  }
+  to {
+    width: 54px;
+    color: #fff;
+  }
+}
+
+@keyframes animacion {
+  from {
+    width: 0px;
+    color: #222222;
+  }
+  to {
+    width: 54px;
+    color: #fff;
+  }
 }
 
 .menu-responsive .menu-responsive-header label .icon {
@@ -450,11 +483,24 @@
 .menu-responsive .menu-responsive-header label .icon .active {
   position: absolute;
   top: 3px;
+  left: -8px;
 }
 
 .menu-responsive .menu-responsive-header label .icon .noactive {
   visibility: hidden;
   font-size: 24px;
+}
+
+.menu-responsive .menu-responsive-header label:hover {
+  padding: 14px 30px;
+}
+
+.menu-responsive .menu-responsive-header label:hover span {
+  display: block;
+  -webkit-animation-name: animacion;
+          animation-name: animacion;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 
 .menu-responsive nav {
@@ -483,6 +529,11 @@
   list-style: none;
 }
 
+.menu-responsive nav ul .first a:hover {
+  background: #fff;
+  color: #222222;
+}
+
 .menu-responsive nav ul .first hr {
   display: block;
   width: 96%;
@@ -509,6 +560,11 @@
   list-style: none;
 }
 
+.menu-responsive nav ul .second a:hover {
+  background: #fff;
+  color: #222222;
+}
+
 .menu-responsive nav ul .third {
   margin-top: 20px;
 }
@@ -526,6 +582,11 @@
 
 .menu-responsive nav ul .third a li {
   list-style: none;
+}
+
+.menu-responsive nav ul .third a:hover {
+  background: #fff;
+  color: #222222;
 }
 
 @media screen and (min-width: 782px) {
