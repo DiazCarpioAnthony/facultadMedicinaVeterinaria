@@ -5,20 +5,29 @@
 
 main .container {
   padding-top: 200px;
-  width: 80%;
-  margin: auto;
   font-size: 20px;
+  overflow: hidden;
 }
 
-main .container .tree::before {
+main .container .horse:before {
   /*Cortesia de https://olivierforget.net/css-shape-outside/ */
   content: " ";
   float: left;
-  background-image: url("../img/tree.png");
+  background-image: url("../img/horse-head2.png");
   background-size: 100% 100%;
-  width: 50%;
-  height: 176px;
-  margin: 12px 25px 0 -3px;
-  shape-outside: content-box polygon(-0.2% -1.8%, 91.6% 1%, 110.2% 0.6%, 101.8% 16%, 98.1% 24.3%, 76.9% 34.5%, 0 70.8%);
+  width: 20%;
+  height: 432px;
+  shape-outside: content-box polygon(2.4% 26.3%, 20% 17.5%, 46.8% 14.2%, 79.8% 21.3%, 83.8% 49.5%, 101.7% 61.2%, 93.8% 87.8%, 47.6% 88.7%, 0 100%);
+}
+
+@media screen and (max-width: 800px) {
+  main .container .horse:before {
+    width: 35%;
+  }
+}
+
+main .container p {
+  width: 85%;
+  margin: auto;
 }
 /*# sourceMappingURL=styleIndex.css.map */
