@@ -7,35 +7,65 @@ main {
     padding-top: 200px;
     font-size: 20px;
     overflow: hidden;
-    .horse {
-      &:before {
-        /*Cortesia de https://olivierforget.net/css-shape-outside/ */
-        content: " ";
-        float: left;
-        background-image: url("../img/horse-head2.png");
-        background-size: 100% 100%;
-        width: 20%;
-        height: 432px;
-        shape-outside: content-box
-          polygon(
-            2.4% 26.3%,
-            20% 17.5%,
-            46.8% 14.2%,
-            79.8% 21.3%,
-            83.8% 49.5%,
-            101.7% 61.2%,
-            93.8% 87.8%,
-            47.6% 88.7%,
-            0 100%
-          );
-        @media screen and (max-width: 800px) {
+    .left{
+      width: 50%;
+      float: left;
+      .horse {
+        &:before {
+          /*Cortesia de https://olivierforget.net/css-shape-outside/ */
+          content: " ";
+          float: left;
+          background-image: url("../img/horse-head2.png");
+          background-size: 100% 100%;
           width: 40%;
+          height: 100vh;
+          shape-outside: content-box
+            polygon(
+              2.4% 26.3%,
+              20% 17.5%,
+              46.8% 14.2%,
+              79.8% 21.3%,
+              83.8% 49.5%,
+              101.7% 61.2%,
+              93.8% 87.8%,
+              47.6% 88.7%,
+              0 100%
+            );
+          @media screen and (max-width: 800px) {
+            width: 40%;
+          }
         }
       }
     }
-    p {
-      width: 85%;
-      margin: auto;
+    .right{
+      width: 50%;
+      float: left;
+      .v {
+        &:before {
+          content: " ";
+          float: left ;
+          background-image: url("../img/V.png");
+          background-size: 100% 100%;
+          width: 100%;
+          height: 100vh;
+          shape-outside: content-box
+            polygon(
+              0 0,
+              68% -0.2%,
+              59.8% 8.2%,
+              53.2% 33.5%,
+              51.2% 44.1%,
+              43.6% 69.4%,
+              33.2% 99.6%,
+              27.6% 100%,
+              18.6% 64.1%,
+              10.9% 35.2%
+            );
+        }
+      }
+    }
+    p{
+      margin-top: 100px;
     }
   }
 }
