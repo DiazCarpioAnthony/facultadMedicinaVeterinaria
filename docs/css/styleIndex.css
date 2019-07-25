@@ -233,6 +233,7 @@ main .container .container-left .noticias .list-noticias {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 19px 0px;
   }
 }
 
@@ -245,6 +246,7 @@ main .container .container-left .noticias .list-noticias .noticia {
 @media screen and (max-width: 880px) {
   main .container .container-left .noticias .list-noticias .noticia {
     width: 100%;
+    padding: 0px;
   }
 }
 
@@ -285,14 +287,35 @@ main .container .container-left .noticias .list-noticias .noticia .imgTexto .tex
 }
 
 main .container .container-left .noticias .list-noticias .noticia .imgTexto .texto p {
+  display: block;
   font-size: 16px;
+}
+
+main .container .container-left .noticias .list-noticias .noticia .imgTexto .texto span {
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+  main .container .container-left .noticias .list-noticias .noticia .imgTexto .texto p {
+    display: none;
+  }
+  main .container .container-left .noticias .list-noticias .noticia .imgTexto .texto span {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  main .container .container-left .noticias .list-noticias .noticia .imgTexto .texto a h3 {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+    line-height: 20px;
+  }
 }
 
 main .container .container-left .noticias .list-noticias .noticia .primary-btn {
   display: block;
   margin-top: 20px;
   line-height: 38px;
-  padding: 0px 0px;
   width: 150px;
   float: right;
   margin-left: 30%;
@@ -321,6 +344,9 @@ main .container .container-left .noticias .list-noticias .noticia .primary-btn:h
     position: absolute;
     right: 15px;
     bottom: 15px;
+    font-size: 15px;
+    line-height: 30px;
+    width: 130px;
   }
 }
 

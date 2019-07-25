@@ -176,6 +176,7 @@ main {
 
           @media screen and (max-width: 880px) {
             flex-direction: column;
+            padding: 19px 0px;
           }
           .noticia {
             padding: 15px;
@@ -184,6 +185,7 @@ main {
 
             @media screen and (max-width: 880px) {
               width: 100%;
+              padding: 0px;
             }
             .imgTexto {
               display: flex;
@@ -212,7 +214,31 @@ main {
                   }
                 }
                 p {
+                  display: block;
                   font-size: 16px;
+                }
+                span {
+                  display: none;
+                }
+
+                @media screen and (max-width: 650px) {
+                  p {
+                    display: none;
+                  }
+                  span {
+                    display: block;
+                    font-size: 16px;
+                    font-weight: bold;
+                  }
+
+                  a {
+                    h3 {
+                      font-size: 18px;
+                      display: block;
+                      margin-bottom: 10px;
+                      line-height: 20px;
+                    }
+                  }
                 }
               }
             }
@@ -220,7 +246,6 @@ main {
               display: block;
               margin-top: 20px;
               line-height: 38px;
-              padding: 0px 0px;
               width: 150px;
               float: right;
               margin-left: 30%;
@@ -249,6 +274,11 @@ main {
                 position: absolute;
                 right: 15px;
                 bottom: 15px;
+
+                font-size:15px;
+                line-height: 30px;
+                width: 130px;
+                
               }
             }
           }
