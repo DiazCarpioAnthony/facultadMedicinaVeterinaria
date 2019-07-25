@@ -5,7 +5,7 @@
 
 /*--------------------------HEADER----------------*/
 .top-bar {
-  background: rgba(125, 153, 53, 0.9);
+  background: #7D9935;
   position: fixed;
   width: 100%;
   z-index: 2;
@@ -86,7 +86,7 @@
           justify-content: space-between;
   position: fixed;
   width: 100%;
-  margin-top: 38px;
+  margin-top: 37px;
   z-index: 2;
 }
 
@@ -124,7 +124,7 @@
   text-decoration: none;
   font-family: "Merriweather Sans Regular", Arial, sans-serif;
   font-style: normal;
-  font-size: 1.2em;
+  font-size: 1.0em;
   font-weight: 400;
   padding: 16px 0px;
   width: 100%;
@@ -196,7 +196,7 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  background: rgba(152, 204, 20, 0.4);
+  background: #a3c54e;
   -webkit-box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.2);
 }
@@ -209,12 +209,12 @@
 }
 
 .navigation-bar .right .right-down-list li a {
-  color: #a51c30;
+  color: #fff;
   display: block;
   text-decoration: none;
   font-family: "Merriweather Sans Regular", Arial, sans-serif;
   font-style: normal;
-  font-size: 1.2em;
+  font-size: 1.0em;
   font-weight: 400;
   padding: 10px 0px;
   width: 100%;
@@ -240,7 +240,7 @@
   left: 50%;
   right: 50%;
   bottom: 0;
-  background: rgba(125, 153, 53, 0.9);
+  background: #fff;
   height: 4px;
   -webkit-transition-property: left right;
   transition-property: left right;
@@ -359,7 +359,7 @@
   text-decoration: none;
   font-family: "Merriweather Sans Regular", Arial, sans-serif;
   font-style: normal;
-  font-size: 1.2em;
+  font-size: 1.0em;
   font-weight: 400;
   padding: 16px 0px;
   width: 100%;
@@ -431,7 +431,7 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  background: rgba(152, 204, 20, 0.4);
+  background: #a3c54e;
   -webkit-box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.2);
 }
@@ -444,12 +444,12 @@
 }
 
 .navigation-bar .left .left-down-list li a {
-  color: #a51c30;
+  color: #fff;
   display: block;
   text-decoration: none;
   font-family: "Merriweather Sans Regular", Arial, sans-serif;
   font-style: normal;
-  font-size: 1.2em;
+  font-size: 1.0em;
   font-weight: 400;
   padding: 10px 0px;
   width: 100%;
@@ -475,7 +475,7 @@
   left: 50%;
   right: 50%;
   bottom: 0;
-  background: rgba(125, 153, 53, 0.9);
+  background: #fff;
   height: 4px;
   -webkit-transition-property: left right;
   transition-property: left right;
@@ -523,6 +523,7 @@
 .menu-responsive {
   position: fixed;
   width: 100%;
+  z-index: 2;
   /*Con JS si esta checked se pone esto sino se saca*/
 }
 

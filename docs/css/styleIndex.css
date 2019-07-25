@@ -6,8 +6,8 @@ main h2 {
   display: block;
   width: 95%;
   margin: 25px auto;
-  font-family: "Merriweather Sans Bold", Arial, sans-serif;
-  font-size: 1.5em;
+  font-family: "Playfair Display", serif;
+  font-size: 1.7em;
   font-weight: 700;
   color: rgba(125, 153, 53, 0.9);
 }
@@ -167,6 +167,170 @@ main .container-slide .swiper-button-next {
 @media screen and (max-width: 880px) {
   main {
     padding-top: 50px;
+  }
+}
+
+main .container {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+  main .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+main .container .container-left {
+  width: 77%;
+}
+
+@media screen and (max-width: 1000px) {
+  main .container .container-left {
+    width: 100%;
+  }
+}
+
+main .container .container-left .noticias h2 {
+  display: block;
+  margin: 0px;
+  width: 150px;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  padding: 10px;
+  color: #fff;
+  background: rgba(125, 153, 53, 0.9);
+}
+
+main .container .container-left .noticias .list-noticias {
+  border-top: 8px solid rgba(125, 153, 53, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 19px 30px;
+}
+
+@media screen and (max-width: 880px) {
+  main .container .container-left .noticias .list-noticias {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+main .container .container-left .noticias .list-noticias .noticia {
+  padding: 15px;
+  position: relative;
+  width: 45%;
+}
+
+@media screen and (max-width: 880px) {
+  main .container .container-left .noticias .list-noticias .noticia {
+    width: 100%;
+  }
+}
+
+main .container .container-left .noticias .list-noticias .noticia .imgTexto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .container .container-left .noticias .list-noticias .noticia .imgTexto img {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  margin-right: 5px;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+main .container .container-left .noticias .list-noticias .noticia .imgTexto .texto {
+  margin-left: 20px;
+}
+
+main .container .container-left .noticias .list-noticias .noticia .imgTexto .texto a {
+  text-decoration: none;
+}
+
+main .container .container-left .noticias .list-noticias .noticia .imgTexto .texto a h3 {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 10px;
+  line-height: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgba(125, 153, 53, 0.9);
+}
+
+main .container .container-left .noticias .list-noticias .noticia .imgTexto .texto a h3:hover {
+  color: #3735a1;
+}
+
+main .container .container-left .noticias .list-noticias .noticia .imgTexto .texto p {
+  font-size: 16px;
+}
+
+main .container .container-left .noticias .list-noticias .noticia .primary-btn {
+  display: block;
+  margin-top: 20px;
+  line-height: 38px;
+  padding: 0px 0px;
+  width: 150px;
+  float: right;
+  margin-left: 30%;
+  border-radius: 0px;
+  background: #ad9966;
+  border: 1px solid #ad9966;
+  color: #fff;
+  font-weight: normal;
+  position: relative;
+  letter-spacing: 2px;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+}
+
+main .container .container-left .noticias .list-noticias .noticia .primary-btn:hover {
+  background: transparent;
+  color: #ad9966;
+}
+
+@media screen and (max-width: 880px) {
+  main .container .container-left .noticias .list-noticias .noticia .primary-btn {
+    margin: 0px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+  }
+}
+
+main .container .container-left .container-right {
+  width: 20%;
+}
+
+@media screen and (max-width: 1000px) {
+  main .container .container-left .container-right {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=styleIndex.css.map */

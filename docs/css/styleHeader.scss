@@ -7,7 +7,7 @@ $colorPrimaryHexa: #7D9935;
 }
 /*--------------------------HEADER----------------*/
 .top-bar {
-  background: $colorPrimary;
+  background: $colorPrimaryHexa;
   position: fixed;
   width: 100%;
   z-index: 2;
@@ -70,7 +70,7 @@ $colorPrimaryHexa: #7D9935;
   justify-content: space-between;
   position: fixed;
   width: 100%;
-  margin-top: 38px;
+  margin-top: 37px;
   z-index: 2;
   .right {
     display: flex;
@@ -93,7 +93,7 @@ $colorPrimaryHexa: #7D9935;
           text-decoration: none;
           font-family: "Merriweather Sans Regular", Arial, sans-serif;
           font-style: normal;
-          font-size: 1.2em;
+          font-size: 1.0em;
           font-weight: 400;
           padding: 16px 0px;
           width: 100%;
@@ -158,7 +158,7 @@ $colorPrimaryHexa: #7D9935;
     .right-down-list {
       display: flex;
       justify-content: flex-end;
-      background: rgba(152, 204, 20, 0.4);
+      background: rgb(163, 197, 78);
 
       box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.2);
       li {
@@ -169,12 +169,12 @@ $colorPrimaryHexa: #7D9935;
         list-style: none;
         width: 200px;
         a {
-          color: #a51c30;
+          color: #fff;
           display: block;
           text-decoration: none;
           font-family: "Merriweather Sans Regular", Arial, sans-serif;
           font-style: normal;
-          font-size: 1.2em;
+          font-size: 1.0em;
           font-weight: 400;
           padding: 10px 0px;
           width: 100%;
@@ -197,7 +197,7 @@ $colorPrimaryHexa: #7D9935;
             left: 50%;
             right: 50%;
             bottom: 0;
-            background: $colorPrimary;
+            background: #fff;
             height: 4px;
             -webkit-transition-property: left right;
             transition-property: left right;
@@ -294,7 +294,7 @@ $colorPrimaryHexa: #7D9935;
           text-decoration: none;
           font-family: "Merriweather Sans Regular", Arial, sans-serif;
           font-style: normal;
-          font-size: 1.2em;
+          font-size: 1.0em;
           font-weight: 400;
           padding: 16px 0px;
           width: 100%;
@@ -357,8 +357,8 @@ $colorPrimaryHexa: #7D9935;
     .left-down-list {
       display: flex;
       justify-content: end;
-      background: rgba(152, 204, 20, 0.4);
-
+      background: rgb(163, 197, 78);
+      
       box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.2);
       li {
         display: block;
@@ -368,12 +368,12 @@ $colorPrimaryHexa: #7D9935;
         list-style: none;
         width: 200px;
         a {
-          color: #a51c30;
+          color: #fff;
           display: block;
           text-decoration: none;
           font-family: "Merriweather Sans Regular", Arial, sans-serif;
           font-style: normal;
-          font-size: 1.2em;
+          font-size: 1.0em;
           font-weight: 400;
           padding: 10px 0px;
           width: 100%;
@@ -396,7 +396,7 @@ $colorPrimaryHexa: #7D9935;
             left: 50%;
             right: 50%;
             bottom: 0;
-            background: $colorPrimary;
+            background: #fff;
             height: 4px;
             -webkit-transition-property: left right;
             transition-property: left right;
@@ -442,6 +442,7 @@ $colorPrimaryHexa: #7D9935;
 .menu-responsive {
   position: fixed;
   width: 100%;
+  z-index: 2;
   /*Con JS si esta checked se pone esto sino se saca*/
   #check {
     display: none;
@@ -467,6 +468,7 @@ $colorPrimaryHexa: #7D9935;
     justify-content: space-between;
     height: 50px;
     background: rgba(98, 114, 58, 1);
+    
     img {
       width: 50px;
       height: 58px;
