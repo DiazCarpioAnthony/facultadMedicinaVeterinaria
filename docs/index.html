@@ -520,15 +520,81 @@
             </div>
             <div class="container-right">
                 <div class="anuncios">
+                    <h2>Enlaces de interés</h2>
+                    <div class="container-slde2">
+                        <!-- Swiper -->
+                        <div class="swiper-container2 loading" id="#">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg" style="background-image:url(img/slide1.jpg)">
+                                        <img src="img/slide1.jpg" class="entity-img" />
+                                    </figure>
+                                    <div class="content">
+                                        <p class="title"></p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg" style="background-image:url(img/slide2.jpg)">
+                                        <img src="img/slide2.jpg" class="entity-img" />
+                                    </figure>
+                                    <div class="content">
+                                        <p class="title"></p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg" style="background-image:url(img/slide3.jpg)">
+                                        <img src="img/slide3.jpg" class="entity-img" />
+                                    </figure>
+                                    <div class="content">
+                                        <p class="title"></p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg" style="background-image:url(img/slide4.jpg)">
+                                        <img src="img/slide4.jpg" class="entity-img" />
+                                    </figure>
+                                    <div class="content">
+                                        <p class="title"></p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg" style="background-image:url(img/slide5.jpg)">
+                                        <img src="img/slide5.jpg" class="entity-img" />
+                                    </figure>
+                                    <div class="content">
+                                        <p class="title"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next" id="swiper-button-next2"></div>
+                            <div class="swiper-button-prev" id="swiper-button-next2"></div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
         </div>
     </main>
 
-
     <script src="js/slideSwiper.js"></script>
     <script src="js/menuResponsive.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container2', {
+            loop: true,
+            speed: 1000,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '#swiper-button-next2',
+                prevEl: '#swiper-button-prev2',
+            },
+        });
+    </script>
 </body>
 
 </html>
