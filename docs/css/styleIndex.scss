@@ -139,7 +139,7 @@ main {
   }
 
   .container {
-    width: 90%;
+    width: 95%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -303,7 +303,6 @@ main {
 
         @media screen and (max-width: 1000px) {
           width: 30%;
-
         }
       }
 
@@ -317,6 +316,8 @@ main {
         float: left;
         transition: opacity 0.6s ease, transform 0.3s ease;
 
+        margin-top: 0px;
+        border-top: 7px solid $colorPrimary;
         @media screen and (max-width: 1000px) {
           margin-top: 0px;
           border-top: 7px solid $colorPrimary;
@@ -385,5 +386,114 @@ main {
         width: 100%;
       }
     }
+  }
+
+  .shape-img {
+    background: $colorPrimary;
+    overflow: hidden;
+    .container-cuy{
+      width: 100%;
+      margin: 20px auto;
+      margin-left: 3%;
+      .cuy {
+        &::before {
+          content: " ";
+          float: right;
+          background-image: url("../img/cuy.png");
+          background-size: 100% 100%;
+          width: 552px;
+          height: 410px;
+          margin: -3px -54px 0 0;
+          shape-outside: content-box polygon( 1% 22.5%, 6% 9.4%, 11.2% 2.6%, 23.1% 3.6%, 31.5% 0.2%, 41% -0.7%, 45% 3%, 50.5% 3.8%, 54.1% 6.8%, 59.6% 10.8%, 66.1% 14.2%, 71.1% 25.6%, 71.6% 38.7%, 74.2% 42.9%, 86.2% 58.5%, 99.8% 76.5%, 99.7% 99.2%, 22.2% 100%, 15.9% 88.4%, 11.6% 76.4%, 8.4% 60.8%, 3.7% 50.1%, 0.2% 33.4% );
+        }
+      }
+      h2{
+        font-size: 28px;
+        color: #fff; 
+        margin: 5px auto;
+        text-align: center;
+      }
+      .title-cuy{
+        font-size: 38px;
+        margin: 10px auto;
+      }
+      h3{
+        font-size: 28px;
+        color: #fff; 
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      p{
+        font-size: 17px;
+        color: #fff; 
+      }
+      .footer-cuy{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        .estacion{
+          border: 3px solid #fff;
+          border-radius: 5px;
+          padding: 10px;
+          margin: 10px;
+          .imagen{
+            text-align: center;
+            color: #fff;
+            font-size: 25px;
+          }
+          .texto{
+            p{
+              text-align: center;
+              font-size: 17px;
+              font-weight: bold;
+              line-height: 20px;
+            }
+          }
+        }
+        .correo{
+          border: 3px solid #fff;
+          border-radius: 5px;
+          padding: 10px;
+          margin: 10px;
+          .imagen{
+            text-align: center;
+            color: #fff;
+            font-size: 25px;
+          }
+          .texto{
+            p{
+              text-align: center;
+              font-size: 17px;
+              font-weight: bold;
+              line-height: 20px;
+            }
+          }
+        }
+        .telefono{
+          border: 3px solid #fff;
+          border-radius: 5px;
+          padding: 10px;
+          margin: 10px;
+          .imagen{
+            text-align: center;
+            color: #fff;
+            font-size: 25px;
+          }
+          .texto{
+            p{
+              text-align: center;
+              font-size: 17px;
+              font-weight: bold;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+    } 
+  }
+  .footer{
+    margin-top: 20px;
   }
 }
