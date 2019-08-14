@@ -1,5 +1,6 @@
 $heightTopBar: 38.8px;
 $colorPrimary: rgba(125, 153, 53, 0.9);
+
 main {
   padding-top: 150px;
   h2 {
@@ -542,17 +543,17 @@ main {
   }
   .footer {
     background: rgba($color: #000000, $alpha: 0.03);
+    
     padding: 20px 0px;
     padding-bottom: 40px;
     @media screen and (max-width: 880px) {
-      padding-bottom: 10px;
+      padding-bottom: 0px;
     }
     .contenedor-verde {
-      width: 85%;
       background: url("../img/fondo-footer.jpg");
       background-size: cover;
       margin: auto;
-      padding: 50px;
+      padding: 20px;
       margin-top: 20px;
       border-radius: 10px;
       .contenido-footer {

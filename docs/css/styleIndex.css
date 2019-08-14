@@ -639,16 +639,15 @@ main .footer {
 
 @media screen and (max-width: 880px) {
   main .footer {
-    padding-bottom: 10px;
+    padding-bottom: 0px;
   }
 }
 
 main .footer .contenedor-verde {
-  width: 85%;
   background: url("../img/fondo-footer.jpg");
   background-size: cover;
   margin: auto;
-  padding: 50px;
+  padding: 20px;
   margin-top: 20px;
   border-radius: 10px;
 }
