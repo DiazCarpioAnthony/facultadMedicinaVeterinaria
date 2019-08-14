@@ -632,9 +632,10 @@ main .shape-img .container-cuy .footer-cuy .telefono .texto p {
 }
 
 main .footer {
+  margin: auto;
   background: rgba(0, 0, 0, 0.03);
   padding: 20px 0px;
-  padding-bottom: 40px;
+  padding-bottom: 0px;
 }
 
 @media screen and (max-width: 880px) {
@@ -647,9 +648,16 @@ main .footer .contenedor-verde {
   background: url("../img/fondo-footer.jpg");
   background-size: cover;
   margin: auto;
-  padding: 20px;
+  padding: 50px;
   margin-top: 20px;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 880px) {
+  main .footer .contenedor-verde {
+    padding: 20px;
+    border-radius: 0px;
+  }
 }
 
 main .footer .contenedor-verde .contenido-footer {
@@ -738,6 +746,7 @@ main .footer .contenedor-verde .contenido-footer .contenido-footer-down {
 
 main .footer .contenedor-verde .contenido-footer .contenido-footer-down h3 {
   text-align: center;
+  margin: 10px auto;
 }
 
 main .footer .contenedor-verde .contenido-footer .contenido-footer-down h3 a {
