@@ -576,6 +576,12 @@ main .shape-img .container-cuy .footer-cuy .estacion {
   border-radius: 5px;
   padding: 10px;
   margin: 10px;
+  word-break: break-all;
+  /* Non standard for webkit */
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 main .shape-img .container-cuy .footer-cuy .estacion .imagen {
@@ -596,6 +602,12 @@ main .shape-img .container-cuy .footer-cuy .correo {
   border-radius: 5px;
   padding: 10px;
   margin: 10px;
+  word-break: break-all;
+  /* Non standard for webkit */
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 main .shape-img .container-cuy .footer-cuy .correo .imagen {
@@ -616,6 +628,12 @@ main .shape-img .container-cuy .footer-cuy .telefono {
   border-radius: 5px;
   padding: 10px;
   margin: 10px;
+  word-break: break-all;
+  /* Non standard for webkit */
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 main .shape-img .container-cuy .footer-cuy .telefono .imagen {

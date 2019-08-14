@@ -486,6 +486,14 @@ main {
           border-radius: 5px;
           padding: 10px;
           margin: 10px;
+
+          word-break: break-all;
+          /* Non standard for webkit */
+          word-break: break-word;
+          -webkit-hyphens: auto;
+          -moz-hyphens: auto;
+          -ms-hyphens: auto;
+          hyphens: auto;
           .imagen {
             text-align: center;
             color: #fff;
@@ -505,6 +513,15 @@ main {
           border-radius: 5px;
           padding: 10px;
           margin: 10px;
+
+          word-break: break-all;
+          /* Non standard for webkit */
+          word-break: break-word;
+          -webkit-hyphens: auto;
+          -moz-hyphens: auto;
+          -ms-hyphens: auto;
+          hyphens: auto;
+
           .imagen {
             text-align: center;
             color: #fff;
@@ -524,6 +541,14 @@ main {
           border-radius: 5px;
           padding: 10px;
           margin: 10px;
+
+          word-break: break-all;
+          /* Non standard for webkit */
+          word-break: break-word;
+          -webkit-hyphens: auto;
+          -moz-hyphens: auto;
+          -ms-hyphens: auto;
+          hyphens: auto;
           .imagen {
             text-align: center;
             color: #fff;
