@@ -13,7 +13,7 @@ main {
     font-weight: 700;
     color: $colorPrimary;
   }
-  hr {
+  hr{
     background: $colorPrimary;
   }
   @media screen and (max-width: 880px) {
@@ -38,15 +38,6 @@ main {
       p {
         margin-right: 8px;
         font-size: 15px;
-        text-decoration: none;
-        color: #695858;
-        a {
-          &:hover {
-            color: #ff0909;
-            font-weight: bold;
-            border-bottom: 1.5px dashed #695858;
-          }
-        }
       }
       a {
         align-items: center;
@@ -59,18 +50,18 @@ main {
         }
       }
     }
-    .title {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      i {
-        display: block;
-        margin: 25px auto;
-        margin-right: 15px;
-        font-size: 1.7em;
-        font-weight: 700;
-        color: $colorPrimary;
-      }
+    .title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        i{
+          display: block;
+          margin: 25px auto;
+          margin-right: 15px;
+          font-size: 1.7em;
+          font-weight: 700;
+          color: $colorPrimary;
+        }
     }
   }
 
@@ -124,35 +115,9 @@ main {
               3.7% 50.1%,
               0.2% 33.4%
             );
+
         }
-      }
-      .llama {
-        &::before {
-          content: " ";
-          float: left;
-          background-image: url("../img/cabezaLlama.png");
-          background-size: 100% 100%;
-          width: 305px;
-          height: 560px;
-          margin: 1px 10px 0 2px;
-          shape-outside: content-box
-            polygon(
-              21.9% 0.5%,
-              100% 0,
-              111.4% 5.9%,
-              104.9% 14.4%,
-              93.9% 25.3%,
-              98.5% 32.8%,
-              94.6% 45.2%,
-              94.5% 56.1%,
-              88.5% 66.7%,
-              85.6% 77.8%,
-              79.8% 92.5%,
-              71.7% 99.6%,
-              0 100%
-            );
-        }
-      }
+      } 
       p {
         font-size: 17px;
         color: #fff;
