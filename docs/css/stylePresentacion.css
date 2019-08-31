@@ -222,16 +222,26 @@ main .container .presentacion {
 }
 
 main .container .presentacion .div-presentacion {
-  background: rgba(125, 153, 53, 0.9);
+  background: rgba(135, 177, 28, 0.6);
   width: 40%;
   margin-top: 50px;
   padding: 25px;
   border: 2px solid #5c3e22;
   border-radius: 15px;
+  -webkit-box-shadow: 6px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 6px 2px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 main .container .presentacion .div-presentacion h3 {
   margin: 10px auto;
+  display: block;
+  border: 1px solid #7c98b6;
+  padding: 15px;
+  color: #584f33;
+  border-radius: 5px;
+  background: #fff;
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.75);
 }
 
 main .container .presentacion .div-presentacion p {
@@ -253,11 +263,21 @@ main .container .presentacion .div-vision {
   padding: 25px;
   border: 2px solid #000000;
   border-radius: 15px;
-  background: rgba(125, 153, 53, 0.9);
+  background: rgba(135, 177, 28, 0.6);
+  -webkit-box-shadow: 6px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 6px 2px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 main .container .presentacion .div-vision h3 {
   margin: 10px auto;
+  display: block;
+  border: 1px solid #7c98b6;
+  padding: 15px;
+  color: #584f33;
+  border-radius: 5px;
+  background: #fff;
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.75);
 }
 
 main .container .presentacion .div-vision p {
@@ -274,15 +294,25 @@ main .container .presentacion .div-vision p {
 }
 
 main .container .presentacion .div-mision {
-  background: rgba(125, 153, 53, 0.9);
+  background: rgba(135, 177, 28, 0.6);
   width: 40%;
   padding: 25px;
   border: 2px solid #000000;
   border-radius: 15px;
+  -webkit-box-shadow: 6px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 6px 2px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 main .container .presentacion .div-mision h3 {
   margin: 10px auto;
+  display: block;
+  border: 1px solid #7c98b6;
+  padding: 15px;
+  color: #584f33;
+  border-radius: 5px;
+  background: #fff;
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.75);
 }
 
 main .container .presentacion .div-mision p {
@@ -299,7 +329,7 @@ main .container .presentacion .div-mision p {
 main .container .presentacion .div-valores {
   margin-top: 20px;
   margin-bottom: 20px;
-  background: rgba(125, 153, 53, 0.9);
+  background: rgba(135, 177, 28, 0.6);
   padding: 25px;
   border: 2px solid #000000;
   text-align: center;
@@ -314,31 +344,41 @@ main .container .presentacion .div-valores p {
 }
 
 main .container .presentacion .div-valores .slide-valores {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-main .container .presentacion .div-valores .slide-valores .valor {
-  margin: 10px;
-  width: 15%;
-  word-break: break-all;
-  /* Non standard for webkit */
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
-}
-
-@media screen and (max-width: 880px) {
-  main .container .presentacion .div-valores .slide-valores .valor {
-    margin: 8px;
-    width: 30%;
-  }
+  /*display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          .valor {
+            margin: 10px;
+            width: 15%;
+            border: 2px solid #000000;
+            background: #3b5998;
+            padding: 50px 0px;
+            word-break: break-all;
+            word-break: break-word;
+            -webkit-hyphens: auto;
+            -moz-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto;
+            @media screen and (max-width: 880px) {
+              margin: 8px;
+              width: 30%;
+            }
+            i {
+              color: rgb(84, 226, 28);
+              font-size: 25px;
+            }
+            p {
+              font-weight: bold;
+            }
+            &:hover {
+              background: $colorPrimary;
+              i {
+                color: rgb(255, 255, 255);
+                transition: color 1s;
+              }
+              transition: background 1s;
+            }
+          }*/
 }
 
 main .footer {

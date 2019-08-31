@@ -1,5 +1,6 @@
 $heightTopBar: 38.8px;
 $colorPrimary: rgba(125, 153, 53, 0.9);
+$colorDiv: rgba(135, 177, 28, 0.6);
 
 main {
   padding-top: calc(180px);
@@ -77,14 +78,22 @@ main {
       display: flex;
       flex-direction: column;
       .div-presentacion {
-        background: $colorPrimary;
+        background: $colorDiv;
         width: 40%;
         margin-top: 50px;
         padding: 25px;
         border: 2px solid rgb(92, 62, 34);
         border-radius: 15px;
+
         h3 {
           margin: 10px auto;
+          display: block;
+          border: 1px solid #7c98b6;
+          padding: 15px;
+          color: #584f33;
+          border-radius: 5px;
+          background: #fff;
+          box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.75);
         }
         p {
           line-height: 25px;
@@ -93,6 +102,9 @@ main {
           width: 90%;
           margin: 20px auto;
         }
+        -webkit-box-shadow: 6px 2px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 6px 2px 5px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 6px 2px 5px 0px rgba(0, 0, 0, 0.75);
       }
       .div-vision {
         /*Funcion de FLEXBOX para poner una caja al lado opuesto*/
@@ -102,9 +114,16 @@ main {
         padding: 25px;
         border: 2px solid #000000;
         border-radius: 15px;
-        background: $colorPrimary;
+        background: $colorDiv;
         h3 {
           margin: 10px auto;
+          display: block;
+          border: 1px solid #7c98b6;
+          padding: 15px;
+          color: #584f33;
+          border-radius: 5px;
+          background: #fff;
+          box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.75);
         }
         p {
           line-height: 25px;
@@ -114,15 +133,25 @@ main {
           width: 90%;
           margin: 20px auto;
         }
+        -webkit-box-shadow: 6px 2px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 6px 2px 5px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 6px 2px 5px 0px rgba(0, 0, 0, 0.75);
       }
       .div-mision {
-        background: $colorPrimary;
+        background: $colorDiv;
         width: 40%;
         padding: 25px;
         border: 2px solid #000000;
         border-radius: 15px;
         h3 {
           margin: 10px auto;
+          display: block;
+          border: 1px solid #7c98b6;
+          padding: 15px;
+          color: #584f33;
+          border-radius: 5px;
+          background: #fff;
+          box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.75);
         }
         p {
           line-height: 25px;
@@ -131,11 +160,14 @@ main {
           width: 90%;
           margin: 20px auto;
         }
+        -webkit-box-shadow: 6px 2px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 6px 2px 5px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 6px 2px 5px 0px rgba(0, 0, 0, 0.75);
       }
       .div-valores {
         margin-top: 20px;
         margin-bottom: 20px;
-        background: $colorPrimary;
+        background: $colorDiv;
         padding: 25px;
         border: 2px solid #000000;
         text-align: center;
@@ -146,15 +178,16 @@ main {
           line-height: 25px;
         }
         .slide-valores {
-          display: flex;
+          /*display: flex;
           justify-content: space-around;
           flex-wrap: wrap;
           .valor {
             margin: 10px;
             width: 15%;
-
+            border: 2px solid #000000;
+            background: #3b5998;
+            padding: 50px 0px;
             word-break: break-all;
-            /* Non standard for webkit */
             word-break: break-word;
             -webkit-hyphens: auto;
             -moz-hyphens: auto;
@@ -164,7 +197,22 @@ main {
               margin: 8px;
               width: 30%;
             }
-          }
+            i {
+              color: rgb(84, 226, 28);
+              font-size: 25px;
+            }
+            p {
+              font-weight: bold;
+            }
+            &:hover {
+              background: $colorPrimary;
+              i {
+                color: rgb(255, 255, 255);
+                transition: color 1s;
+              }
+              transition: background 1s;
+            }
+          }*/
         }
       }
     }
