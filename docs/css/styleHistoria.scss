@@ -124,6 +124,11 @@ main {
               3.7% 50.1%,
               0.2% 33.4%
             );
+            @media screen and (max-width:880px){
+              width: 265px;
+              height: 360px;
+  
+            }
         }
       }
       .llama {
@@ -151,6 +156,11 @@ main {
               71.7% 99.6%,
               0 100%
             );
+          @media screen and (max-width:880px){
+            width: 205px;
+            height: 360px;
+
+          }
         }
       }
       p {

@@ -541,7 +541,7 @@ main {
           border-radius: 5px;
           padding: 10px;
           margin: 10px;
-
+          /*Hacer que el texto no se salga del div*/
           word-break: break-all;
           /* Non standard for webkit */
           word-break: break-word;

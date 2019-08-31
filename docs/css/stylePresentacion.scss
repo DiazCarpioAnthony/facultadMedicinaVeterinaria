@@ -13,7 +13,7 @@ main {
     font-weight: 700;
     color: $colorPrimary;
   }
-  hr{
+  hr {
     background: $colorPrimary;
   }
   @media screen and (max-width: 880px) {
@@ -38,6 +38,15 @@ main {
       p {
         margin-right: 8px;
         font-size: 15px;
+        text-decoration: none;
+        color: #695858;
+        a {
+          &:hover {
+            color: #ff0909;
+            font-weight: bold;
+            border-bottom: 1.5px dashed #695858;
+          }
+        }
       }
       a {
         align-items: center;
@@ -50,21 +59,117 @@ main {
         }
       }
     }
-    .title{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        i{
-          display: block;
-          margin: 25px auto;
-          margin-right: 15px;
-          font-size: 1.7em;
-          font-weight: 700;
-          color: $colorPrimary;
+    .title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      i {
+        display: block;
+        margin: 25px auto;
+        margin-right: 15px;
+        font-size: 1.7em;
+        font-weight: 700;
+        color: $colorPrimary;
+      }
+    }
+
+    .presentacion {
+      display: flex;
+      flex-direction: column;
+      .div-presentacion {
+        background: $colorPrimary;
+        width: 40%;
+        margin-top: 50px;
+        padding: 25px;
+        border: 2px solid rgb(92, 62, 34);
+        border-radius: 15px;
+        h3 {
+          margin: 10px auto;
         }
+        p {
+          line-height: 25px;
+        }
+        @media screen and (max-width: 880px) {
+          width: 90%;
+          margin: 20px auto;
+        }
+      }
+      .div-vision {
+        /*Funcion de FLEXBOX para poner una caja al lado opuesto*/
+        align-self: flex-end;
+
+        width: 40%;
+        padding: 25px;
+        border: 2px solid #000000;
+        border-radius: 15px;
+        background: $colorPrimary;
+        h3 {
+          margin: 10px auto;
+        }
+        p {
+          line-height: 25px;
+        }
+        @media screen and (max-width: 880px) {
+          align-self: flex-start;
+          width: 90%;
+          margin: 20px auto;
+        }
+      }
+      .div-mision {
+        background: $colorPrimary;
+        width: 40%;
+        padding: 25px;
+        border: 2px solid #000000;
+        border-radius: 15px;
+        h3 {
+          margin: 10px auto;
+        }
+        p {
+          line-height: 25px;
+        }
+        @media screen and (max-width: 880px) {
+          width: 90%;
+          margin: 20px auto;
+        }
+      }
+      .div-valores {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background: $colorPrimary;
+        padding: 25px;
+        border: 2px solid #000000;
+        text-align: center;
+        h3 {
+          margin: 10px auto;
+        }
+        p {
+          line-height: 25px;
+        }
+        .slide-valores {
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          .valor {
+            margin: 10px;
+            width: 15%;
+
+            word-break: break-all;
+            /* Non standard for webkit */
+            word-break: break-word;
+            -webkit-hyphens: auto;
+            -moz-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto;
+            @media screen and (max-width: 880px) {
+              margin: 8px;
+              width: 30%;
+            }
+          }
+        }
+      }
     }
   }
-
+  /*
   .shape-img {
     background: $colorPrimary;
     overflow: hidden;
@@ -115,9 +220,45 @@ main {
               3.7% 50.1%,
               0.2% 33.4%
             );
-
+            @media screen and (max-width:880px){
+              width: 265px;
+              height: 360px;
+  
+            }
         }
-      } 
+      }
+      .llama {
+        &::before {
+          content: " ";
+          float: left;
+          background-image: url("../img/cabezaLlama.png");
+          background-size: 100% 100%;
+          width: 305px;
+          height: 560px;
+          margin: 1px 10px 0 2px;
+          shape-outside: content-box
+            polygon(
+              21.9% 0.5%,
+              100% 0,
+              111.4% 5.9%,
+              104.9% 14.4%,
+              93.9% 25.3%,
+              98.5% 32.8%,
+              94.6% 45.2%,
+              94.5% 56.1%,
+              88.5% 66.7%,
+              85.6% 77.8%,
+              79.8% 92.5%,
+              71.7% 99.6%,
+              0 100%
+            );
+          @media screen and (max-width:880px){
+            width: 205px;
+            height: 360px;
+
+          }
+        }
+      }
       p {
         font-size: 17px;
         color: #fff;
@@ -133,6 +274,8 @@ main {
       }
     }
   }
+  */
+
   .footer {
     margin: auto;
     background: rgba($color: #000000, $alpha: 0.03);
