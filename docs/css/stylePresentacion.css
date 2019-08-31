@@ -250,7 +250,7 @@ main .container .presentacion .div-presentacion p {
 
 @media screen and (max-width: 880px) {
   main .container .presentacion .div-presentacion {
-    width: 90%;
+    width: 80%;
     margin: 20px auto;
   }
 }
@@ -288,7 +288,7 @@ main .container .presentacion .div-vision p {
   main .container .presentacion .div-vision {
     -ms-flex-item-align: start;
         align-self: flex-start;
-    width: 90%;
+    width: 80%;
     margin: 20px auto;
   }
 }
@@ -321,7 +321,7 @@ main .container .presentacion .div-mision p {
 
 @media screen and (max-width: 880px) {
   main .container .presentacion .div-mision {
-    width: 90%;
+    width: 80%;
     margin: 20px auto;
   }
 }
@@ -341,6 +341,13 @@ main .container .presentacion .div-valores h3 {
 
 main .container .presentacion .div-valores p {
   line-height: 25px;
+}
+
+@media screen and (max-width: 880px) {
+  main .container .presentacion .div-valores {
+    width: 80%;
+    margin: 20px auto;
+  }
 }
 
 main .container .presentacion .div-valores .slide-valores {
